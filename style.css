@@ -1,34 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@100..900&display=swap");
 /* this design is for big screen >= 1414px width */
 :root {
-  --main-bg-color: #080e33;
-  --main-bg-color-1: #0a0a14;
+  --main-bg-color: hsl(228 25% 6%);
   --main-bg-color-2: #16213e;
 
   --light-color: rgba(248, 247, 247, 0.489);
   --white-color: #fff;
-  --color-bg1: #6c63ff;
-  --color-bg2: #424890;
-  --color-bg3: #2bace7;
-  --color-bg4: #9ac7db;
+  --color-bg1: #424890;
+  --color-bg2: #2bace7;
+  --color-bg3: #9ac7db;
 
   --box-shadow: 0 2px 25px rgba(3, 106, 249, 0.2),
     0 0 38px rgba(1, 63, 156, 0.2), 0 0 60px rgba(3, 93, 248, 0.2);
   --box-shadow-2: 0 2px 14px rgba(0, 0, 0, 0.2),
     0 0 28px rgba(255, 255, 255, 0.1), 0 0 50px rgba(255, 255, 255, 0.1);
   --container-width-lg: 95%;
+  --container-width-small: 90%;
+  --container-width-ex-small: 86%;
   --transition: all 400ms ease;
   --border-radius: 1rem;
   --search-padding: 0.4rem 1rem;
   --card-border-radius: 1rem;
 }
 
-
-.stars{
-  position: absolute;
-  background: var(--white-color);
-  border-radius: 50%;
-}
 * {
   margin: 0;
   padding: 0;
@@ -44,7 +38,7 @@ a {
 body {
   font-family: "Poppins", sans-serif;
   /* background: radial-gradient(ellipse at bottom, #050d1e 0%, #000000 100%); */
-  background: linear-gradient(135deg, #0a0a14 0%, #16213e 50%, #080e33 100%);
+  background: var(--main-bg-color);
   color: var(--white-color);
   line-height: 1.7;
 }
@@ -117,7 +111,7 @@ img {
   width: 100%;
 }
 .navigation .logo {
-  background: linear-gradient(90deg, var(--color-bg3), var(--color-bg4));
+  background: linear-gradient(90deg, var(--color-bg2), var(--color-bg3));
   color: transparent;
   background-clip: text;
   font-size: 28px;
@@ -126,7 +120,7 @@ img {
   transition: all 0.3s ease;
 }
 .window-scroll {
-  border-bottom: var(--color-bg2) 1px solid;
+  border-bottom: var(--color-bg1) 1px solid;
   backdrop-filter: blur(10px);
 }
 .navigation nav {
@@ -141,6 +135,7 @@ img {
   font-size: 1rem;
   font-family: poppins, sans-serif;
 }
+/* hero section */
 
 .Portfolio-hero {
   height: 100vh;
@@ -267,7 +262,7 @@ img {
   align-items: center;
   color: gray;
 }
-
+/* about */
 .about__container {
   height: 700px;
   display: flex;
@@ -290,7 +285,7 @@ img {
   color: white;
   animation-name: ball-color;
   box-shadow: var(--box-shadow);
-  background: linear-gradient(90deg, var(--color-bg3), var(--color-bg4));
+  background: linear-gradient(90deg, var(--color-bg2), var(--color-bg3));
   animation-duration: 7s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -375,7 +370,7 @@ img {
   gap: 2rem;
 }
 .about__right h1 {
-  background: linear-gradient(90deg, var(--color-bg3), var(--color-bg4));
+  background: linear-gradient(90deg, var(--color-bg2), var(--color-bg3));
   color: transparent;
   background-clip: text;
   font-size: 48px;
@@ -420,9 +415,8 @@ img {
   transition: all 0.3s ease;
   background: rgba(255, 255, 255, 0.01);
 }
-.skill-card img {
-  width: 2rem;
-  height: 2rem;
+.skill-card span {
+  font-size: 2rem;
 }
 .skill-card:hover {
   background: var(--main-bg-color);
@@ -453,12 +447,12 @@ img {
 .cunt-box h2 {
   color: var(--color-bg3);
 }
+/* projects */
 .projects-container {
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
-/* projects */
 .projects-container .projects-header {
   display: flex;
   flex-direction: column;
@@ -467,7 +461,7 @@ img {
   align-items: center;
 }
 .projects-container .projects-header h1 {
-  background: linear-gradient(90deg, var(--color-bg3), var(--color-bg4));
+  background: linear-gradient(90deg, var(--color-bg2), var(--color-bg3));
   color: transparent;
   background-clip: text;
   font-family: poppins, sans-serif;
@@ -733,166 +727,4 @@ img {
   background: var(--main-bg-color);
   outline: none;
   border: none;
-}
-/* FAQs */
-.faqs {
-  padding: 6rem 0;
-}
-
-.faqs h2 {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.faqs__container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.faq {
-  display: flex;
-  padding: 1.5rem;
-  margin-bottom: 1rem;
-  border-radius: 1rem;
-  cursor: pointer;
-  transition: var(--transition);
-  border: 1px solid var(--color-bg2);
-}
-
-.faq:hover {
-  /* transform: scale(0.9); */
-  background: var(--color-bg1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.question__answer h4 {
-  font-size: 1.2rem;
-  margin: 1rem;
-}
-
-.question__answer p {
-  margin-top: 1.12rem;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  display: none;
-}
-
-.faq.open p {
-  display: block;
-}
-
-.faq__icon i {
-  transition: transform 0.3s ease;
-}
-
-/* Footer */
-footer {
-  border-top: solid 0.88px var(--color-bg2);
-  padding-top: 4rem;
-}
-
-.footer_container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 4rem;
-  font-size: 0.9rem;
-}
-
-footer ul {
-  margin-bottom: 4rem;
-  transition: var(--transition);
-}
-
-footer ul li a:hover {
-  color: var(--main-bg-color-1);
-}
-
-.footer_container > div h4 {
-  margin-bottom: 1.2rem;
-}
-
-.footerOne p {
-  margin: 0 0 2rem;
-  color: var(--light-color);
-}
-
-.footerTwo ul li a,
-.footerThree ul li a {
-  color: var(--light-color);
-}
-.Q_Links {
-  width: 1.5rem;
-  display: flex;
-  align-items: center;
-  color: var(--white-color);
-  gap: 0.5rem;
-  padding: 0.5rem;
-  width: 100%;
-}
-
-.Social_links {
-  display: flex;
-  gap: 1rem;
-  font-size: 1.1rem;
-  margin-top: 1rem;
-}
-
-.Social_links li a {
-  color: var(--light-color);
-}
-
-.footer_copyright {
-  border-top: solid 0.88px var(--color-bg2);
-  font-size: 1rem;
-  color: var(--light-color);
-  display: flex;
-  gap: 1rem;
-  padding: 0.4rem 0 0 1rem;
-}
-
-.footer_copyright img {
-  width: 3rem;
-  height: 3rem;
-}
-
-#rotate {
-  transform: rotate(135deg);
-}
-@media screen and (max-width: 1080px) {
-  .container {
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-  }
-  section {
-    padding: 1rem 0;
-  }
-  p {
-    font-size: 17px;
-  }
-  .about__container {
-    height: 100vh;
-  }
-  .about__left {
-    width: 50%;
-    margin-left: 3rem;
-  }
-  .about__right {
-    width: 50%;
-  }
-  .my-skills {
-    width: 100%;
-    height: 100%;
-  }
-  .my-skills .skills-cards {
-    width: 100%;
-    height: 204px;
-  }
-  .skill-card {
-    width: 80px;
-    height: 90px;
-  }
-  .cunt-boxs {
-    justify-content: left;
-  }
 }
