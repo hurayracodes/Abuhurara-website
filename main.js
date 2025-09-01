@@ -18,23 +18,4 @@ faqs.forEach((faq) => {
 });
 
 
-// let hoverStars = document.querySelector('.Portfolio-hero');
-// hoverStars.addEventListener('mousemove', () =>{
-//   let starsNumber = 200;
-//   let startsColor = 'White'
-//   let starSize = 0.005;
-
-
-//       // set up the stars
-//     var stars = [];
-//     for (let i = 0; i < starsNumber; i++) {
-//         stars[i] = {
-//             r: Math.random() * starSize * canvas.width / 2,
-//             x: Math.floor(Math.random() * canvas.width),
-//             y: Math.floor(Math.random() * canvas.height),
-//         }
-//     }
-//   });
-
-
 

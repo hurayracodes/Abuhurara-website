@@ -261,8 +261,10 @@
   <!-- contact -->
   <section class="contact">
     <div class="contact-container container">
-      <h1>Let's Create Together</h1>
-      <p>Ready to bring your ideas to life? Get in touch and Let's discuss your next project</p>
+      <div class="contact-header">
+        <h1>Let's Create Together</h1>
+        <p>Ready to bring your ideas to life? Get in touch and Let's discuss your next project</p>
+      </div>
       <div class="contact-container-box">
         <div class="contact-left">
           <div class="follow-box">
@@ -272,7 +274,7 @@
 
             <ul>
               <li>
-                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="lucide lucide-linkedin w-5 h-5">
                     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -281,7 +283,7 @@
                   </svg></a>
               </li>
               <li>
-                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="lucide lucide-github w-5 h-5">
                     <path
@@ -291,7 +293,7 @@
                   </svg></a>
               </li>
               <li>
-                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="lucide lucide-instagram" data-lov-id="src/components/Footer.tsx:25:16"
                     data-lov-name="Instagram" data-component-path="src/components/Footer.tsx" data-component-line="25"
@@ -302,7 +304,7 @@
                   </svg></a>
               </li>
               <li>
-                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="lucide lucide-facebook" data-lov-id="src/components/Footer.tsx:21:16"
                     data-lov-name="Facebook" data-component-path="src/components/Footer.tsx" data-component-line="21"
@@ -311,7 +313,7 @@
                   </svg></a>
               </li>
               <li>
-                <a href="abuhuraira3912l@gamil.com"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                <a href="abuhuraira3912l@gamil.com"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" class="lucide lucide-mail w-5 h-5">
                     <rect width="20" height="16" x="2" y="4" rx="2"></rect>
@@ -325,7 +327,7 @@
             <p>I'm always excited to work on new projects and collaborate with innovative teams. Whether you have a
               specific project in mind or just want to explore possibilities, feel free to reach out.</p>
             <li>
-              <a href="abuhuraira3912l@gamil.com"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+              <a href="abuhuraira3912l@gamil.com"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                   stroke-linejoin="round" class="lucide lucide-mail w-5 h-5">
                   <rect width="20" height="16" x="2" y="4" rx="2"></rect>
@@ -338,22 +340,24 @@
         <div class="contact-right">
           <h3>Send a Message</h3>
           <form action="">
-            <div class="contact-fields">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your Name.." required>
-            </div>
-            <div class="contact-fields">
-              <label for="fname">Email</label>
-              <input type="text" id="fname" name="email" placeholder="Your Email.." required>
-            </div>
-            <div class="contact-fields">
-              <label for="fname">Subject</label>
-              <input type="text" id="fname" name="email" placeholder="Project discussion" required>
-            </div>
-            <label for="subject">Message</label>
-            <textarea id="subject" name="subject" placeholder="Tell me about your project.."
-              style="height:200px"></textarea>
-
+            <div class="input-feilds">
+              <div class="input-box">
+                <label for="">Your Name</label>
+                <input type="text" placeholder="Your Name">
+              </div>
+                <div class="input-box"><label for="">Your Email</label>
+                  <input type="email" placeholder="Your email">
+                </div>
+              </div>
+              <div class="input-box">
+                <label for="">Subject</label>
+                <input type="text" placeholder="Project discussion">
+              </div>
+              <div class="input-box">
+                <label for="">Message</label>
+                <textarea placeholder="Tell me about your project..."?></textarea>
+              </div>
+              <button>Send Message</button>
           </form>
         </div>
       </div>

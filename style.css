@@ -2,7 +2,7 @@
 /* this design is for big screen >= 1414px width */
 :root {
   --main-bg-color: hsl(228 25% 6%);
-  --main-bg-color-2: #16213e;
+  --main-bg-color-1: #16213e;
 
   --light-color: rgba(248, 247, 247, 0.489);
   --white-color: #fff;
@@ -646,9 +646,14 @@ img {
   border: 1px solid var(--color-bg2);
 }
 .contact-container {
-  height: 100vh;
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container .contact-header {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -674,7 +679,6 @@ img {
 .contact-container .contact-left .follow-box ul {
   display: flex;
   gap: 1rem;
-  font-size: 2rem;
 }
 .contact-container .contact-left .follow-box ul li a {
   color: var(--white-color);
@@ -682,8 +686,7 @@ img {
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
-  border: 1px solid var(--color-bg2);
-  padding: 1rem 1rem;
+  padding: 0.3rem 0.3rem;
 }
 .contact-container .contact-left .get-in-touch {
   display: flex;
@@ -695,17 +698,18 @@ img {
   gap: 1rem;
   align-items: center;
   word-spacing: 2rem;
-  font-size: 24px;
+  font-size: 15px;
 }
 .contact-right {
   width: 50%;
   height: 100%;
   display: flex;
+  gap: 2rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.contact-container .contact-container-box .contact-right form{
+.contact-container .contact-container-box .contact-right form {
   border: 1px solid var(--color-bg2);
   display: flex;
   flex-direction: column;
@@ -713,18 +717,74 @@ img {
   border-radius: 2rem;
   gap: 2rem;
   width: 80%;
+  height: 100%;
 }
-.contact-container .contact-container-box .contact-right form .contact-fields{
+.contact-container .contact-container-box .contact-right form .input-feilds {
+  display: flex;
+  gap: 1px;
+}
+.contact-container
+  .contact-container-box
+  .contact-right
+  form
+  .input-feilds
+  .input-box {
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-container
+  .contact-container-box
+  .contact-right
+  form
+  .input-feilds
+  .input-box
+  input {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: var(--main-bg-color-1);
+  outline: none;
+  color: var(--white-color);
+  border: none;
+}
+.contact-container .contact-container-box .contact-right form .input-box {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-
+  gap: 1rem;
 }
-.contact-container .contact-container-box .contact-right form .contact-fields input{
-  padding: 1rem ;
+.contact-container .contact-container-box .contact-right form .input-box input {
+  padding: 1rem;
   border-radius: 1rem;
-  width: 50%;
-  background: var(--main-bg-color);
+  background: var(--main-bg-color-1);
+  color: var(--white-color);
   outline: none;
   border: none;
+}
+.contact-container
+  .contact-container-box
+  .contact-right
+  form
+  .input-box
+  textarea {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: var(--main-bg-color-1);
+  color: var(--white-color);
+  outline: none;
+  border: none;
+  height: 130px;
+}
+.contact-container .contact-container-box .contact-right form button {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: fit-content;
+  color: var(--white-color);
+  font-weight: 600;
+  border: none;
+  background: var(--color-bg1);
 }
