@@ -1314,6 +1314,12 @@ img {
   }
 }
 @media screen and (max-width: 768px) {
+  .navigation nav .logo{
+    font-size: 26px;
+  }
+  .navigation .nav ul{
+    gap: 12px;
+  }
   .swiper-slide p {
     font-size: 0.89rem;
   }
@@ -1395,10 +1401,13 @@ img {
     padding: 1rem 2rem;
   }
   .navigation .logo {
-    font-size: 25px;
+    font-size: 20px;
   }
   .navigation nav ul {
-    gap: 1rem;
+    gap: 16px;
+  }
+  .navigation nav ul li a{
+    font-size: 1rem;
   }
   .swiper-slide .client-img {
     width: 4rem;
@@ -1464,11 +1473,14 @@ img {
 }
 @media screen and (max-width: 460px) {
   .navigation nav .logo {
-    font-size: 16px;
+    font-size: 12px;
   }
   .swiper-slide p {
     line-height: 26px;
     padding: 2px;
+  }
+  .navigation nav ul{
+    gap: 6px;
   }
   .navigation nav ul li a {
     font-size: 12px;
